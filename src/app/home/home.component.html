@@ -1,0 +1,16 @@
+
+<div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block" id="country-codes">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle >
+        <span class="value">{{countryCode}}</span>
+        <span class="caret"></span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="scrollable-menu">
+        <button ngbDropdownItem  *ngFor="let sortOrder of sortOrders" (click)="changeCountryCode(sortOrder)">{{sortOrder}}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
